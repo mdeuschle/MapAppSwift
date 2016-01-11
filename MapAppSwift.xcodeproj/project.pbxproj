@@ -15,6 +15,8 @@
 		A83BF6951C403AF4007829B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83BF6931C403AF4007829B3 /* LaunchScreen.storyboard */; };
 		A83BF6A01C403AF4007829B3 /* MapAppSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83BF69F1C403AF4007829B3 /* MapAppSwiftTests.swift */; };
 		A83BF6AB1C403AF5007829B3 /* MapAppSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83BF6AA1C403AF5007829B3 /* MapAppSwiftUITests.swift */; };
+		A83BF6B91C403CD7007829B3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83BF6B81C403CD7007829B3 /* MapKit.framework */; };
+		A83BF6BB1C403CE6007829B3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83BF6BA1C403CE6007829B3 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A83BF6A61C403AF5007829B3 /* MapAppSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapAppSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83BF6AA1C403AF5007829B3 /* MapAppSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppSwiftUITests.swift; sourceTree = "<group>"; };
 		A83BF6AC1C403AF5007829B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A83BF6B81C403CD7007829B3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A83BF6BA1C403CE6007829B3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83BF6BB1C403CE6007829B3 /* CoreLocation.framework in Frameworks */,
+				A83BF6B91C403CD7007829B3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +85,8 @@
 		A83BF67B1C403AF4007829B3 = {
 			isa = PBXGroup;
 			children = (
+				A83BF6BA1C403CE6007829B3 /* CoreLocation.framework */,
+				A83BF6B81C403CD7007829B3 /* MapKit.framework */,
 				A83BF6861C403AF4007829B3 /* MapAppSwift */,
 				A83BF69E1C403AF4007829B3 /* MapAppSwiftTests */,
 				A83BF6A91C403AF5007829B3 /* MapAppSwiftUITests */,
@@ -197,6 +205,11 @@
 					A83BF6831C403AF4007829B3 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = EUAKYK4NXS;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A83BF69A1C403AF4007829B3 = {
 						CreatedOnToolsVersion = 7.2;
